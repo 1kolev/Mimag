@@ -1,25 +1,110 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #343434;
     color:white;
     box-sizing: border-box;
 }
-
 body {
     background-color: black;
 }
+.wrapper{
 
-.gap-left {
-    width: 15%;
-    height: 100vh;
-    border: 2px solid red;
-    background: #111;
 }
-
-.gap-right {
-    border: 2px solid red;
-    width: 15%;
+.sidegap {
+    border:2px solid blue;
+    width: 12%;
     height: 100vh;
-    border: 2px solid red;
+}
+.gap-right{
+    float:right;
+}
+.gap-left{
+    float:left;
+}
+.center {
+    width:76%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.header-bar {
+    background: black;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    height: 44px;
+    border-bottom: 2px solid #23272d;
+}
+.header-bar * {
+    background-color: black;
+}
+.logo {
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: -2px;
+    margin-right: 16px;
+    user-select: none;
+}
+.logo span {
+    color: #009fe3;
+}
+.logo b {
+    color: #ef1c52;
+}
+.logo * {
+}
+.search-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.search-box * {
+}
+.search-input-container {
+    width: 100%;
+    position: relative;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+.search-input-container input {
+    width: 100%;
+    padding: 7px 38px 7px 14px;
+    border-radius: 16px;
+    border: 1.5px solid #009fe3;
+    background: #23272d;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+.search-icon {
+    position: absolute;
+    right: 13px;
+    top: 8px;
+    color: #009fe3;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    margin-left: 22px;
+    font-size: 0.98rem;
+}
+.header-actions div,
+.header-actions span {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.89;
+    position: relative;
+    font-weight: 500;
+}
+.header-actions .icon {
+    margin-right: 7px;
+    color: #009fe3;
+    font-size: 1.1em;
 }
