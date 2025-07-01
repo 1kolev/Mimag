@@ -32,7 +32,8 @@ body {
     display: flex;
     align-items: center;
     padding: 0 14px;
-    height: 44px;
+    height: 46px;
+    overflow:hidden;
     border-bottom: 2px solid #23272d;
 }
 .header-bar * {
@@ -40,7 +41,7 @@ body {
 }
 .logo {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: -2px;
     margin-right: 16px;
     user-select: none;
@@ -56,7 +57,8 @@ body {
 .search-box {
     flex: 1;
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    padding-top: 2px;
 }
 .search-box * {
 }
@@ -69,6 +71,7 @@ body {
 }
 .search-input-container input {
     width: 100%;
+    height: 27px;
     padding: 7px 38px 7px 14px;
     border-radius: 16px;
     border: 1.5px solid #009fe3;
@@ -88,10 +91,10 @@ body {
 }
 .header-actions {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 23px;
     margin-left: 22px;
-    font-size: 0.98rem;
+    margin-top: 2px;
 }
 .header-actions div,
 .header-actions span {
@@ -103,8 +106,10 @@ body {
     position: relative;
     font-weight: 500;
 }
+.actions-element p {
+    padding-left:5px;
+    align-items: flex-end;
+}
 .header-actions .icon {
     margin-right: 7px;
-    color: #009fe3;
-    font-size: 1.1em;
 }
