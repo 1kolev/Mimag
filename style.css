@@ -9,32 +9,42 @@ body {
     background-color: black;
 }
 .wrapper{
-
+    width:100%;
 }
-.sidegap {
-    border:2px solid blue;
-    width: 12%;
-    height: 100vh;
-}
-.gap-right{
-    float:right;
-}
-.gap-left{
-    float:left;
-}
-.center {
-    width:76%;
+/*.sidegap {*/
+/*    border:2px solid blue;*/
+/*    width: 12%;*/
+/*    height: 100vh;*/
+/*}*/
+/*.gap-right{*/
+/*    float:right;*/
+/*}*/
+/*.gap-left{*/
+/*    float:left;*/
+/*}*/
+.center { width:100%;}
+.center > div {
+    width:100%;
     margin-left:auto;
     margin-right:auto;
 }
+
+
+.header-bar-container {
+    width:100%;
+    background-color: black;
+    border-bottom: 2px solid #23272d;
+}
 .header-bar {
-    background: black;
+    width:76%;
+    margin-left:auto;
+    margin-right:auto;
+    background: transparent;
     display: flex;
     align-items: center;
-    padding: 0 14px;
     height: 46px;
     overflow:hidden;
-    border-bottom: 2px solid #23272d;
+
 }
 .header-bar * {
     background-color: black;
@@ -52,15 +62,11 @@ body {
 .logo b {
     color: #ef1c52;
 }
-.logo * {
-}
 .search-box {
     flex: 1;
     display: flex;
     align-items: baseline;
     padding-top: 2px;
-}
-.search-box * {
 }
 .search-input-container {
     width: 100%;
@@ -110,6 +116,73 @@ body {
     padding-left:5px;
     align-items: flex-end;
 }
-.header-actions .icon {
-    margin-right: 7px;
+
+
+.navbar-container {
+    background: linear-gradient(to right, #fd232f , #5102ff 65%, #007cdf);
+}
+.navbar {
+    width:76%;
+    margin-left:auto;
+    margin-right:auto;
+    background: transparent;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    padding: 0 6px;
+    position: relative;
+}
+.navbar * {
+    background-color: transparent;
+}
+.navbar .menu-icon {
+    font-size: 1.3em;
+    margin-right: 11px;
+    cursor: pointer;
+    color: #fff;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 26px;
+}
+.navbar ul li {
+    color: #dadada;
+    margin-right: 18px;
+    position: relative;
+    cursor: pointer;
+    padding: 2px 10px;
+}
+.navbar ul li:hover {
+    border-radius: 12px;
+    border: 1px solid white;
+    overflow: hidden;
+}
+.navbar ul li a {
+    text-decoration: none;
+}
+.navbar ul li:hover {
+    border: 1px solid white;
+
+}
+.navbar .navbar-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+.navbar .navbar-help {
+    display: flex;
+    align-items: center;
+    color: #dadada;
+    cursor: pointer;
+}
+.navbar-help a {
+    text-wrap: nowrap;
+    text-decoration: none;
+}
+.navbar-help svg {
+    padding-right: 6px;
 }
