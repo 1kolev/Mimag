@@ -214,10 +214,7 @@ body {
 }
 .banner-section {
     display:flex;
-    max-width:100%;
-}
-.promo-banner div {
-    background: transparent;
+    width:100%;
 }
 .promo-banner {
     /*background: linear-gradient(135deg, #6f1ee9 0%, #dc4040 100%);*/
@@ -233,8 +230,47 @@ body {
     height: 100%;
     width: 100%;
     aspect-ratio: 3/1;
+    position:relative;
 }
-.banner-content > img {
+.banner-image {
     width: 100%;
     height: 100%;
+    background: url("./images/AligatorTV.jpeg");
+    background-size: 100% 100%;
+}
+.banner-image::before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-image: url("images/Tom&JerrySale.jpeg");
+    content: "";
+    translate: -95%;
+}
+.banner-image-buttons{
+    position:absolute;
+    bottom: 20px;
+    right:15px;
+    width: 105px;
+    height:15px;
+}
+.banner-image-buttons > input[type="radio"] {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #0082e6;
+    background-color: black;
+    border-radius: 50%;
+}
+.banner-image-buttons > input[type="radio"]:hover {
+    width:15px;
+    height:15px;
+    border-width: 2px;
+}
+.banner-image-buttons > input[type="radio"]:checked {
+    background-color: #ad0000;
+    border:none;
+}
+.banner-image-buttons > input[type="radio"]:checked:hover {
+    border: 2px solid #850000;
 }
