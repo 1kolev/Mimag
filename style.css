@@ -217,7 +217,6 @@ body {
     width:100%;
 }
 .promo-banner {
-    /*background: linear-gradient(135deg, #6f1ee9 0%, #dc4040 100%);*/
     position: relative;
     overflow: hidden;
     color: white;
@@ -239,13 +238,26 @@ body {
     background-size: 100% 100%;
 }
 .banner-image::before {
-    display: block;
     width: 100%;
     height: 100%;
     background-size: 100% 100%;
     background-image: url("images/Tom&JerrySale.jpeg");
     content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     translate: -95%;
+}
+.banner-image::after {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background: url("images/WhiteWeekendCat.jpeg");
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 95%;
 }
 .banner-image-buttons{
     position:absolute;
@@ -261,6 +273,7 @@ body {
     border: 2px solid #0082e6;
     background-color: black;
     border-radius: 50%;
+    cursor:pointer;
 }
 .banner-image-buttons > input[type="radio"]:hover {
     width:15px;
@@ -273,4 +286,18 @@ body {
 }
 .banner-image-buttons > input[type="radio"]:checked:hover {
     border: 2px solid #850000;
+}
+#banner-radio1:checked + .banner-image::before {
+    animation: radio1 1s linear;
+}
+@keyframes radio1 {
+    0%{
+        transform:translateX(0%);
+    }
+    100%{
+        transform:translateX(100%);
+    }
+}
+#banner-radio2 {
+
 }
