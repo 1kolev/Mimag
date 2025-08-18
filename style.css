@@ -235,7 +235,7 @@ body {
     width: 100%;
     height: 100%;
     background-size: 100% 100%;
-    transform:translateX(100%);
+    /*transform:translateX(100%);*/
 }
 .banner-image::before {
     width: 100%;
@@ -268,12 +268,16 @@ body {
 }
 #banner-image2 {
     background-image: url("./images/AligatorTV.jpeg");
+    position:absolute;
+    top:0;
+    left:200%;
+    z-index:0;
 }
 #banner-image2::before {
     background-image: url("images/FroggleSupercomputer.jpeg");
 }
 #banner-image2::after {
-    background-image: url("images/WhiteWeekendCat.jpeg");
+    /*background-image: url("images/WhiteWeekendCat.jpeg");*/
 }
 .banner-image-buttons {
     position:absolute;
@@ -317,20 +321,20 @@ body {
     transition: transform 0.3s ease;
 }
 
-/*.banner-content:has(#banner-radio4:checked) #banner-image1 {*/
-/*    transform:translateX(200%);*/
-/*}*/
-
-.banner-content:has(#banner-radio4:checked) #banner-image1::before {
-    background-image: url("images/FroggleSupercomputer.jpeg");
-    transform:translateX(100%);
+.banner-content:has(#banner-radio4:checked) #banner-image1 {
+    transform:translateX(-200%);
     transition: transform .3s ease;
 }
-.banner-content:has(#banner-radio5:checked) #banner-image2 {
-    transform:translateX(0%);
-    transition: transform 0.3s ease;
-}
-.banner-content:has(#banner-radio6:checked) #banner-image2 {
+
+.banner-content:has(#banner-radio4:checked) #banner-image2 {
     transform:translateX(-100%);
-    transition: transform 0.3s ease;
+    transition: transform .3s ease;
 }
+/*.banner-content:has(#banner-radio5:checked) #banner-image2 {*/
+/*    transform:translateX(-200%);*/
+/*    transition: transform 0.3s ease;*/
+/*}*/
+/*.banner-content:has(#banner-radio6:checked) #banner-image2 {*/
+/*    transform:translateX(-100%);*/
+/*    transition: transform 0.3s ease;*/
+/*}*/
